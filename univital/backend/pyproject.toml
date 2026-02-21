@@ -1,0 +1,18 @@
+[project]
+name = "univital-api"
+version = "0.1.0"
+description = "UniVital Healthcare Financial Risk Engine – backend API"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "httpx",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
