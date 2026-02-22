@@ -1,0 +1,557 @@
+[
+  {
+    "plan_id": "GA-BCBS-G-001",
+    "provider": "Blue Cross Blue Shield",
+    "metal_tier": "Gold",
+    "net_premium": 148.5,
+    "fragility_slope": 0.0483,
+    "elasticity_ratio": 8.5,
+    "distance_to_cliff": 3200,
+    "stability_classification": "Moderately Sensitive",
+    "fragility_level": "Low",
+    "breach_probability": 0.35,
+    "mean_oop": 4520.0,
+    "p90_exposure": 7100.0,
+    "expected_annual_total_cost": 6302.0,
+    "oop_max": 8150,
+    "deductible": 1500,
+    "base_premium": 385.0,
+    "premium_fragility_curve": [
+      {
+        "income": 10000,
+        "net_premium": 69.44,
+        "subsidy": 315.56,
+        "fragility_slope": 0.0406,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 12000,
+        "net_premium": 76.2,
+        "subsidy": 308.8,
+        "fragility_slope": 0.0406,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 14000,
+        "net_premium": 83.42,
+        "subsidy": 301.58,
+        "fragility_slope": 0.0433,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 16000,
+        "net_premium": 91.07,
+        "subsidy": 293.93,
+        "fragility_slope": 0.0459,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 18000,
+        "net_premium": 99.12,
+        "subsidy": 285.88,
+        "fragility_slope": 0.0483,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 20000,
+        "net_premium": 107.53,
+        "subsidy": 277.47,
+        "fragility_slope": 0.0505,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 22000,
+        "net_premium": 116.28,
+        "subsidy": 268.72,
+        "fragility_slope": 0.0525,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 24000,
+        "net_premium": 125.36,
+        "subsidy": 259.64,
+        "fragility_slope": 0.0545,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 26000,
+        "net_premium": 338.8,
+        "subsidy": 46.2,
+        "fragility_slope": 1.2806,
+        "discontinuity_flag": true
+      },
+      {
+        "income": 28000,
+        "net_premium": 359.59,
+        "subsidy": 25.41,
+        "fragility_slope": 0.1247,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 30000,
+        "net_premium": 380.38,
+        "subsidy": 4.62,
+        "fragility_slope": 0.1247,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 32000,
+        "net_premium": 385.0,
+        "subsidy": 0,
+        "fragility_slope": 0.0277,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 35000,
+        "net_premium": 385.0,
+        "subsidy": 0,
+        "fragility_slope": 0.0,
+        "discontinuity_flag": false
+      }
+    ]
+  },
+  {
+    "plan_id": "GA-UHC-S-002",
+    "provider": "UnitedHealthcare",
+    "metal_tier": "Silver",
+    "net_premium": 108.3,
+    "fragility_slope": 0.0476,
+    "elasticity_ratio": 22.1,
+    "distance_to_cliff": 1800,
+    "stability_classification": "Moderately Sensitive",
+    "fragility_level": "Moderate",
+    "breach_probability": 0.52,
+    "mean_oop": 5340.0,
+    "p90_exposure": 7950.0,
+    "expected_annual_total_cost": 6639.6,
+    "oop_max": 8700,
+    "deductible": 3000,
+    "base_premium": 340.0,
+    "premium_fragility_curve": [
+      {
+        "income": 10000,
+        "net_premium": 63.76,
+        "subsidy": 276.24,
+        "fragility_slope": 0.04,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 12000,
+        "net_premium": 70.43,
+        "subsidy": 269.57,
+        "fragility_slope": 0.04,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 14000,
+        "net_premium": 77.57,
+        "subsidy": 262.43,
+        "fragility_slope": 0.0428,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 16000,
+        "net_premium": 85.13,
+        "subsidy": 254.87,
+        "fragility_slope": 0.0454,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 18000,
+        "net_premium": 93.07,
+        "subsidy": 246.93,
+        "fragility_slope": 0.0476,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 20000,
+        "net_premium": 101.38,
+        "subsidy": 238.62,
+        "fragility_slope": 0.0499,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 22000,
+        "net_premium": 110.03,
+        "subsidy": 229.97,
+        "fragility_slope": 0.0519,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 24000,
+        "net_premium": 299.2,
+        "subsidy": 40.8,
+        "fragility_slope": 1.135,
+        "discontinuity_flag": true
+      },
+      {
+        "income": 26000,
+        "net_premium": 317.56,
+        "subsidy": 22.44,
+        "fragility_slope": 0.1102,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 28000,
+        "net_premium": 335.92,
+        "subsidy": 4.08,
+        "fragility_slope": 0.1102,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 30000,
+        "net_premium": 340.0,
+        "subsidy": 0,
+        "fragility_slope": 0.0245,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 32000,
+        "net_premium": 340.0,
+        "subsidy": 0,
+        "fragility_slope": 0.0,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 35000,
+        "net_premium": 340.0,
+        "subsidy": 0,
+        "fragility_slope": 0.0,
+        "discontinuity_flag": false
+      }
+    ]
+  },
+  {
+    "plan_id": "GA-AET-S-003",
+    "provider": "Aetna",
+    "metal_tier": "Silver",
+    "net_premium": 115.0,
+    "fragility_slope": 0.0498,
+    "elasticity_ratio": 19.8,
+    "distance_to_cliff": 2200,
+    "stability_classification": "Moderately Sensitive",
+    "fragility_level": "Moderate",
+    "breach_probability": 0.47,
+    "mean_oop": 5010.0,
+    "p90_exposure": 7600.0,
+    "expected_annual_total_cost": 6390.0,
+    "oop_max": 8500,
+    "deductible": 2800,
+    "base_premium": 355.0,
+    "premium_fragility_curve": [
+      {
+        "income": 10000,
+        "net_premium": 66.57,
+        "subsidy": 288.43,
+        "fragility_slope": 0.0418,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 12000,
+        "net_premium": 73.54,
+        "subsidy": 281.46,
+        "fragility_slope": 0.0418,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 14000,
+        "net_premium": 80.99,
+        "subsidy": 274.01,
+        "fragility_slope": 0.0447,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 16000,
+        "net_premium": 88.88,
+        "subsidy": 266.12,
+        "fragility_slope": 0.0473,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 18000,
+        "net_premium": 97.18,
+        "subsidy": 257.82,
+        "fragility_slope": 0.0498,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 20000,
+        "net_premium": 105.86,
+        "subsidy": 249.14,
+        "fragility_slope": 0.0521,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 22000,
+        "net_premium": 114.89,
+        "subsidy": 240.11,
+        "fragility_slope": 0.0542,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 24000,
+        "net_premium": 312.4,
+        "subsidy": 42.6,
+        "fragility_slope": 1.1851,
+        "discontinuity_flag": true
+      },
+      {
+        "income": 26000,
+        "net_premium": 331.57,
+        "subsidy": 23.43,
+        "fragility_slope": 0.115,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 28000,
+        "net_premium": 350.74,
+        "subsidy": 4.26,
+        "fragility_slope": 0.115,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 30000,
+        "net_premium": 355.0,
+        "subsidy": 0,
+        "fragility_slope": 0.0256,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 32000,
+        "net_premium": 355.0,
+        "subsidy": 0,
+        "fragility_slope": 0.0,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 35000,
+        "net_premium": 355.0,
+        "subsidy": 0,
+        "fragility_slope": 0.0,
+        "discontinuity_flag": false
+      }
+    ]
+  },
+  {
+    "plan_id": "GA-KP-B-004",
+    "provider": "Kaiser Permanente",
+    "metal_tier": "Bronze",
+    "net_premium": 72.8,
+    "fragility_slope": 0.0459,
+    "elasticity_ratio": 35.6,
+    "distance_to_cliff": 800,
+    "stability_classification": "Cliff-Prone",
+    "fragility_level": "High",
+    "breach_probability": 0.68,
+    "mean_oop": 6450.0,
+    "p90_exposure": 8500.0,
+    "expected_annual_total_cost": 7323.6,
+    "oop_max": 9100,
+    "deductible": 6500,
+    "base_premium": 290.0,
+    "premium_fragility_curve": [
+      {
+        "income": 10000,
+        "net_premium": 56.92,
+        "subsidy": 233.08,
+        "fragility_slope": 0.0386,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 12000,
+        "net_premium": 63.35,
+        "subsidy": 226.65,
+        "fragility_slope": 0.0386,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 14000,
+        "net_premium": 70.23,
+        "subsidy": 219.77,
+        "fragility_slope": 0.0413,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 16000,
+        "net_premium": 77.51,
+        "subsidy": 212.49,
+        "fragility_slope": 0.0437,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 18000,
+        "net_premium": 85.16,
+        "subsidy": 204.84,
+        "fragility_slope": 0.0459,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 20000,
+        "net_premium": 93.17,
+        "subsidy": 196.83,
+        "fragility_slope": 0.0481,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 22000,
+        "net_premium": 255.2,
+        "subsidy": 34.8,
+        "fragility_slope": 0.9722,
+        "discontinuity_flag": true
+      },
+      {
+        "income": 24000,
+        "net_premium": 270.86,
+        "subsidy": 19.14,
+        "fragility_slope": 0.094,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 26000,
+        "net_premium": 286.52,
+        "subsidy": 3.48,
+        "fragility_slope": 0.094,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 28000,
+        "net_premium": 290.0,
+        "subsidy": 0,
+        "fragility_slope": 0.0209,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 30000,
+        "net_premium": 290.0,
+        "subsidy": 0,
+        "fragility_slope": 0.0,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 32000,
+        "net_premium": 290.0,
+        "subsidy": 0,
+        "fragility_slope": 0.0,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 35000,
+        "net_premium": 290.0,
+        "subsidy": 0,
+        "fragility_slope": 0.0,
+        "discontinuity_flag": false
+      }
+    ]
+  },
+  {
+    "plan_id": "GA-AMB-G-005",
+    "provider": "Ambetter",
+    "metal_tier": "Gold",
+    "net_premium": 162.0,
+    "fragility_slope": 0.0514,
+    "elasticity_ratio": 6.2,
+    "distance_to_cliff": 3600,
+    "stability_classification": "Moderately Sensitive",
+    "fragility_level": "Low",
+    "breach_probability": 0.28,
+    "mean_oop": 3850.0,
+    "p90_exposure": 6100.0,
+    "expected_annual_total_cost": 5794.0,
+    "oop_max": 7500,
+    "deductible": 1200,
+    "base_premium": 410.0,
+    "premium_fragility_curve": [
+      {
+        "income": 10000,
+        "net_premium": 73.95,
+        "subsidy": 336.05,
+        "fragility_slope": 0.0431,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 12000,
+        "net_premium": 81.14,
+        "subsidy": 328.86,
+        "fragility_slope": 0.0431,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 14000,
+        "net_premium": 88.84,
+        "subsidy": 321.16,
+        "fragility_slope": 0.0462,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 16000,
+        "net_premium": 96.99,
+        "subsidy": 313.01,
+        "fragility_slope": 0.0489,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 18000,
+        "net_premium": 105.55,
+        "subsidy": 304.45,
+        "fragility_slope": 0.0514,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 20000,
+        "net_premium": 114.51,
+        "subsidy": 295.49,
+        "fragility_slope": 0.0538,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 22000,
+        "net_premium": 123.83,
+        "subsidy": 286.17,
+        "fragility_slope": 0.0559,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 24000,
+        "net_premium": 133.5,
+        "subsidy": 276.5,
+        "fragility_slope": 0.058,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 26000,
+        "net_premium": 360.8,
+        "subsidy": 49.2,
+        "fragility_slope": 1.3638,
+        "discontinuity_flag": true
+      },
+      {
+        "income": 28000,
+        "net_premium": 382.94,
+        "subsidy": 27.06,
+        "fragility_slope": 0.1328,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 30000,
+        "net_premium": 405.08,
+        "subsidy": 4.92,
+        "fragility_slope": 0.1328,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 32000,
+        "net_premium": 410.0,
+        "subsidy": 0,
+        "fragility_slope": 0.0295,
+        "discontinuity_flag": false
+      },
+      {
+        "income": 35000,
+        "net_premium": 410.0,
+        "subsidy": 0,
+        "fragility_slope": 0.0,
+        "discontinuity_flag": false
+      }
+    ]
+  }
+]

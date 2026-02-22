@@ -1,3 +1,5 @@
+import type { RiskResponse, ShockResponse } from "../types/risk";
+
 const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 export const api = {
@@ -5,8 +7,10 @@ export const api = {
     name: string;
     email: string;
     income: string;
-    hasIns: boolean | null;
     county: string;
+    medicationCount: string;
+    expectedErVisits: string;
+    therapyFrequency: string;
   }) {
     const res = await fetch(`${API_BASE}/users`, {
       method: "POST",
@@ -15,8 +19,11 @@ export const api = {
         full_name: userData.name,
         email: userData.email,
         income_profile: parseFloat(userData.income) || 0,
-        coverage: userData.hasIns ? "insured" : "uninsured",
+        coverage: "uninsured",
         county: userData.county || "Fulton",
+        medication_count: parseInt(userData.medicationCount) || 0,
+        expected_er_visits: parseFloat(userData.expectedErVisits) || 0,
+        therapy_frequency: parseFloat(userData.therapyFrequency) || 0,
       }),
     });
     if (!res.ok) {
@@ -26,19 +33,15 @@ export const api = {
     return res.json();
   },
 
-  async getUser(email: string) {
-    const res = await fetch(`${API_BASE}/users/${encodeURIComponent(email)}`);
-    if (!res.ok) throw new Error("User not found");
-    return res.json();
-  },
-
   async updateUser(
     email: string,
     userData: {
       name: string;
       income: string;
-      hasIns: boolean | null;
       county: string;
+      medicationCount: string;
+      expectedErVisits: string;
+      therapyFrequency: string;
     },
   ) {
     const res = await fetch(`${API_BASE}/users/${encodeURIComponent(email)}`, {
@@ -47,17 +50,36 @@ export const api = {
       body: JSON.stringify({
         full_name: userData.name,
         income_profile: parseFloat(userData.income) || 0,
-        coverage: userData.hasIns ? "insured" : "uninsured",
+        coverage: "uninsured",
         county: userData.county || "Fulton",
+        medication_count: parseInt(userData.medicationCount) || 0,
+        expected_er_visits: parseFloat(userData.expectedErVisits) || 0,
+        therapy_frequency: parseFloat(userData.therapyFrequency) || 0,
       }),
     });
     if (!res.ok) throw new Error("Update failed");
     return res.json();
   },
 
-  async getPlansByCounty(county: string) {
-    const res = await fetch(`${API_BASE}/plans/${encodeURIComponent(county)}`);
-    if (!res.ok) throw new Error("Could not fetch plans");
+  async getRisk(email: string): Promise<RiskResponse> {
+    const res = await fetch(`${API_BASE}/risk/${encodeURIComponent(email)}`);
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.detail || "Risk data unavailable");
+    }
+    return res.json();
+  },
+
+  async runShock(email: string, scenarioType: string): Promise<ShockResponse> {
+    const res = await fetch(`${API_BASE}/shock/${encodeURIComponent(email)}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ scenario_type: scenarioType }),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.detail || "Shock scenario unavailable");
+    }
     return res.json();
   },
 };
