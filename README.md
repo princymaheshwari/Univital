@@ -74,16 +74,11 @@ Bronze is immutable ingestion + normalization.
 
 We compute net premium as:
 
-5111
-\text{NetPremium}(I) = \text{BasePremium} - \text{Subsidy}(I)
-5111
+NetPremium(I) = BasePremium - Subsidy(I)
 
 To measure sensitivity:
 
-5111
-\text{FragilitySlope}(I) \approx 
-\frac{\text{NetPremium}(I+\Delta) - \text{NetPremium}(I-\Delta)}{2\Delta}
-5111
+FragilitySlope}(I) ~= (NetPremium(I+Delta) - NetPremium(I-Delta)) / (2 * Delta)
 
 A spike in slope indicates a subsidy discontinuity (“cliff”).
 
@@ -112,13 +107,9 @@ Students often have fluctuating income. A small increase in income can trigger a
 
 ### Computation
 
-5111
-\text{NetPremium}(I) = \text{BaseCost} - \text{Subsidy}(I)
-5111
+NetPremium(I) = BaseCost - Subsidy(I)
 
-5111
-\text{FragilitySlope} = \frac{d(\text{Premium})}{dI}
-5111
+FragilitySlope = d(Premium)/dI
 
 Higher slope = more fragile premium.
 
@@ -142,16 +133,11 @@ Subsidy cliffs can create sudden financial shock.
 
 Distance to cliff:
 
-5111
-\text{CliffDistance} = I_{\text{threshold}} - I_{\text{current}}
-5111
+CliffDistance = I(threshold) - I(current)
 
 Elasticity ratio:
 
-5111
-\text{ElasticityRatio} =
-\frac{\% \text{Premium Change}}{\% \text{Income Change}}
-5111
+ElasticityRatio = (%Premium Change)/(%Income Change)
 
 Classification:
 - Stable
@@ -184,45 +170,29 @@ Inputs:
 
 We simulate annual out-of-pocket:
 
-5111
-\text{AnnualOOP}_k = \sum_i \text{MedicalEventCost}_{k,i}
-5111
+AnnualOOP(k) = Sum[i](MedicalEventCost(k,i))
 
 Then compute:
 
 Breach probability:
 
-5111
-\text{BreachProbability} = P(\text{AnnualOOP} > \text{Deductible})
-5111
+BreachProbability = P(AnnualOOP > Deductible)
 
 Expected out-of-pocket:
 
-5111
-\text{MeanOOP} = \mathbb{E}[\text{AnnualOOP}]
-5111
+MeanOOP = E[AnnualOOP]
 
 Tail exposure:
 
-5111
-\text{P90Exposure} =
-\text{Quantile}_{0.9}(\text{AnnualOOP})
-5111
+P90Exposure = Quantile(0.9, AnnualOOP)
 
 Total expected cost:
 
-5111
-\text{ExpectedAnnualTotalCost} =
-12 \times \text{NetPremium} + \text{MeanOOP}
-5111
-
-### Visualization
+ExpectedAnnualTotalCost} = 12 * NetPremium + MeanOOP
 
 Instead of histograms, we overlay CDF curves:
 
-5111
-F(x) = P(\text{AnnualOOP} \le x)
-5111
+F(x) = P(AnnualOOP <= x)
 
 Overlaying plans shows:
 
@@ -249,10 +219,7 @@ Precomputed scenarios:
 
 Delta calculation:
 
-5111
-\Delta \text{Metric} =
-\text{Shocked} - \text{Baseline}
-5111
+\Delta Metric} = Shocked - Baseline
 
 Metrics include:
 
@@ -275,7 +242,7 @@ We built a Retrieval-Augmented Generation (RAG) assistant for plan-specific ques
 
 ## Step 1 — Vectorization (Gemini Embeddings)
 
-We use Gemini’s .
+We use Gemini’s gemini-embedding-001 model to process the plans.
 
 Each plan → 3072-dimensional vector.
 
@@ -294,9 +261,7 @@ Why Actian?
 
 Hybrid search combines:
 
-5111
-\text{SimilarityScore}(\vec{q}, \vec{v})
-5111
+SimilarityScore(q, v)
 
 with metadata filtering (e.g., Metal Tier constraints).
 
