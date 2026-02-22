@@ -8,8 +8,9 @@ import MainLayout from "./layout/MainLayout";
 import Dashboard from "./pages/Dashboard";
 import Shock from "./pages/Shock";
 import Compare from "./pages/Compare";
+import Architecture from "./pages/Architecture";
 
-type Page = "dashboard" | "shock" | "compare";
+type Page = "dashboard" | "shock" | "compare" | "architecture";
 
 export default function App() {
   const [theme, setTheme] = useState("dark");
@@ -139,6 +140,9 @@ export default function App() {
       )}
       {activePage === "compare" && (
         <Compare plans={riskPlans} profileKey={riskProfileKey} glass={glass} dark={dark} />
+      )}
+      {activePage === "architecture" && (
+        <Architecture dark={dark} glass={glass} />
       )}
     </MainLayout>
   );

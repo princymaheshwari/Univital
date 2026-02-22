@@ -1,7 +1,7 @@
 import React from "react";
 import type { RiskPlanProfile } from "../types/risk";
 
-const LOGO_URL = "https://files.oaiusercontent.com/file-K1XNq9f4C4U7jB5L1Z8p3d";
+const LOGO_URL = "/logo.png";
 
 const SHORT: Record<string, string> = {
   "Blue Cross Blue Shield": "BCBS", UnitedHealthcare: "UHC", Aetna: "Aetna",
@@ -9,7 +9,7 @@ const SHORT: Record<string, string> = {
 };
 function sn(p?: string) { return SHORT[p || ""] || p || "—"; }
 
-type Page = "dashboard" | "shock" | "compare";
+type Page = "dashboard" | "shock" | "compare" | "architecture";
 
 const Icon = ({ name, className = "", fill = 0, size = "24px" }: { name: string; className?: string; fill?: number; size?: string }) => (
   <span className={`material-symbols-rounded select-none ${className}`} style={{ fontVariationSettings: `'FILL' ${fill}, 'wght' 400, 'GRAD' 0, 'opsz' 24`, fontSize: size, display: "inline-block" }}>{name}</span>
@@ -41,6 +41,7 @@ export default function MainLayout({
     { id: "dashboard", label: "Dashboard", icon: "analytics" },
     { id: "shock", label: "Shock Tests", icon: "bolt" },
     { id: "compare", label: "Compare", icon: "compare_arrows" },
+    { id: "architecture", label: "Architecture", icon: "account_tree" },
   ];
 
   const borderB = dark ? "border-white/[0.06]" : "border-black/[0.06]";
