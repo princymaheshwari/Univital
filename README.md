@@ -53,6 +53,8 @@ In production, the API would query Databricks Gold tables directly.
 
 # Databricks Lakehouse Architecture
 
+All modeling code lives in a repo connected to our Databricks account as a folder: **[databricks-modeling](https://github.com/princymaheshwari/databricks-modeling)**.
+
 ## 🥉 Bronze Layer — Raw Ingestion
 
 Stores:
