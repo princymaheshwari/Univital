@@ -1,0 +1,53 @@
+Health_Insurance_Provider,Health_Insurance_Plan,Plan_Marketing_Name,County,Metal,Premium_21_Year_Old,Deductible_21_Year_Old,Copay_Primary_Care,Copay_Specialist,Copay_Emergency_Room,Subsidy_Details
+Health Advantage,13262AR0230002,HA Silver AH,Fulton,Silver,376.98,5400,30 Copay after deductible,45 Copay after deductible,800 Copay after deductible,99.98
+Health Advantage,13262AR0230004,HA Gold Standardized,Fulton,Gold,459.22,1500,30,60,25 Coinsurance after deductible,99.98
+Health Advantage,13262AR0230005,HA Silver Standardized,Fulton,Silver,347,5900,40,80,40 Coinsurance after deductible,99.98
+Health Advantage,13262AR0230006,HA Bronze Suitcase,Fulton,Expanded Bronze,294.53,9250,45,100,No Charge after Deductible,99.98
+Health Advantage,13262AR0230007,HA Bronze Exp Standardized,Fulton,Expanded Bronze,298.27,7500,50,100,50 Coinsurance after deductible,99.98
+Ambetter from Arkansas Health & Wellness,37903AR0070025,Connected Silver (QualChoiceLife),Fulton,Silver,359.51,7350,55,75,250 Copay after deductible,99.99
+Ambetter from Arkansas Health & Wellness,37903AR0070030,Elite Silver (QualChoiceLife),Fulton,Silver,362.75,0,50,90,50,99.99
+Ambetter from Arkansas Health & Wellness,37903AR0070031,Elite Gold (QualChoiceLife),Fulton,Gold,481.52,0,5,60,30,99.99
+Ambetter from Arkansas Health & Wellness,37903AR0070033,Standard Silver (QualChoiceLife),Fulton,Silver,334.17,5900,40,80,40 Coinsurance after deductible,99.99
+Ambetter from Arkansas Health & Wellness,37903AR0070034,Standard Gold (QualChoiceLife),Fulton,Gold,417.82,1500,30,60,25 Coinsurance after deductible,99.99
+Octave,48772AR0010001,Octave Gold Standardized,Fulton,Gold,450.22,1500,30,60,25 Coinsurance after deductible,99.98
+Octave,48772AR0010002,Octave Silver Standardized,Fulton,Silver,340.47,5900,40,80,40 Coinsurance after deductible,99.98
+Octave,48772AR0010003,Octave Silver AH,Fulton,Silver,370.5,5350,30 Copay after deductible,45 Copay after deductible,800 Copay after deductible,99.98
+Octave,48772AR0010004,Octave Bronze Exp Standardized,Fulton,Expanded Bronze,292.9,7500,50,100,50 Coinsurance after deductible,99.98
+Octave,48772AR0010005,Octave Bronze Value,Fulton,Expanded Bronze,327.68,5900,65,130,50 Coinsurance after deductible,99.98
+Ambetter from Arkansas Health & Wellness,62141AR0080007,Connected Silver,Fulton,Silver,357.26,7350,55,75,250 Copay after deductible,99.99
+Ambetter from Arkansas Health & Wellness,62141AR0080009,Complete Silver,Fulton,Silver,345.36,6000,30,60,40 Coinsurance after deductible,99.99
+Ambetter from Arkansas Health & Wellness,62141AR0080012,Everyday Silver,Fulton,Silver,341.65,6500,35,70,40 Coinsurance after deductible,99.99
+Ambetter from Arkansas Health & Wellness,62141AR0080014,Complete Gold,Fulton,Gold,417.92,1450,15,35,20 Coinsurance after deductible,99.99
+Ambetter from Arkansas Health & Wellness,62141AR0080017,Everyday Bronze,Fulton,Expanded Bronze,304.67,8450,40,90,50 Coinsurance after deductible,99.99
+Ambetter from Arkansas Health & Wellness,62141AR0080026,Elite Bronze,Fulton,Expanded Bronze,352.01,0,45,115,"2,500",99.99
+Ambetter from Arkansas Health & Wellness,62141AR0080029,Focused Silver,Fulton,Silver,338.72,6300,45,100,50 Coinsurance after deductible,99.99
+Ambetter from Arkansas Health & Wellness,62141AR0080030,Everyday Gold,Fulton,Gold,398.34,750,35,55,35 Coinsurance after deductible,99.99
+Ambetter from Arkansas Health & Wellness,62141AR0080032,Standard Expanded Bronze,Fulton,Expanded Bronze,298.39,7500,50,100,50 Coinsurance after deductible,99.99
+Ambetter from Arkansas Health & Wellness,62141AR0080033,Standard Silver,Fulton,Silver,332.07,5900,40,80,40 Coinsurance after deductible,99.99
+Ambetter from Arkansas Health & Wellness,62141AR0080034,Standard Gold,Fulton,Gold,398.49,1500,30,60,25 Coinsurance after deductible,99.99
+Ambetter from Arkansas Health & Wellness,62141AR0100007,Connected Silver + Vision + Adult Dental,Fulton,Silver,372.94,7350,55,75,250 Copay after deductible,95.79
+Ambetter from Arkansas Health & Wellness,62141AR0100009,Complete Silver + Vision + Adult Dental,Fulton,Silver,360.52,6000,30,60,40 Coinsurance after deductible,95.79
+Ambetter from Arkansas Health & Wellness,62141AR0100014,Complete Gold + Vision + Adult Dental,Fulton,Gold,436.26,1450,15,35,20 Coinsurance after deductible,95.79
+Ambetter from Arkansas Health & Wellness,62141AR0100017,Everyday Bronze + Vision + Adult Dental,Fulton,Expanded Bronze,318.04,8450,40,90,50 Coinsurance after deductible,95.79
+Ambetter from Arkansas Health & Wellness,62141AR0100026,Elite Bronze + Vision + Adult Dental,Fulton,Expanded Bronze,367.46,0,45,115,"2,500",95.79
+Ambetter from Arkansas Health & Wellness,62141AR0100030,Everyday Gold + Vision + Adult Dental,Fulton,Gold,415.83,750,35,55,35 Coinsurance after deductible,95.79
+Ambetter from Arkansas Health & Wellness,62141AR0100031,Everyday Silver + Vision + Adult Dental,Fulton,Silver,356.64,6500,35,70,40 Coinsurance after deductible,95.79
+Ambetter from Arkansas Health & Wellness,62141AR0100032,Focused Silver + Vision + Adult Dental,Fulton,Silver,353.58,6300,45,100,50 Coinsurance after deductible,95.79
+Ambetter from Arkansas Health & Wellness,62141AR0100033,Standard Expanded Bronze + Vision + Adult Dental,Fulton,Expanded Bronze,311.48,7500,50,100,50 Coinsurance after deductible,95.79
+Ambetter from Arkansas Health & Wellness,62141AR0100034,Standard Silver + Vision + Adult Dental,Fulton,Silver,346.65,5900,40,80,40 Coinsurance after deductible,95.79
+Ambetter from Arkansas Health & Wellness,62141AR0100035,Standard Gold + Vision + Adult Dental,Fulton,Gold,415.98,1500,30,60,25 Coinsurance after deductible,95.79
+Ambetter from Arkansas Health & Wellness,70525AR0070261,Connected Silver (QualChoice),Fulton,Silver,359.74,7350,55,75,250 Copay after deductible,99.99
+Ambetter from Arkansas Health & Wellness,70525AR0070267,Elite Silver (QualChoice),Fulton,Silver,362.98,0,50,90,50,99.99
+Ambetter from Arkansas Health & Wellness,70525AR0070268,Elite Gold (QualChoice),Fulton,Gold,482.26,0,5,60,30,99.99
+Ambetter from Arkansas Health & Wellness,70525AR0070285,Choice Bronze HSA (QualChoice),Fulton,Expanded Bronze,322.4,7250,No Charge after Deductible,No Charge after Deductible,No Charge after Deductible,99.99
+Ambetter from Arkansas Health & Wellness,70525AR0070287,Standard Expanded Bronze (QualChoice),Fulton,Expanded Bronze,313.33,7500,50,100,50 Coinsurance after deductible,99.99
+Ambetter from Arkansas Health & Wellness,70525AR0070288,Standard Silver (QualChoice),Fulton,Silver,334.38,5900,40,80,40 Coinsurance after deductible,99.99
+Ambetter from Arkansas Health & Wellness,70525AR0070289,Standard Gold (QualChoice),Fulton,Gold,418.45,1500,30,60,25 Coinsurance after deductible,99.99
+Arkansas Blue Cross and Blue Shield,75293AR1200003,Silver Premier Suitcase,Fulton,Silver,387.01,4050,35,95,575 Copay after deductible,99.86
+Arkansas Blue Cross and Blue Shield,75293AR1200004,Silver AH,Fulton,Silver,377.59,5450,30 Copay after deductible,45 Copay after deductible,800 Copay after deductible,99.86
+Arkansas Blue Cross and Blue Shield,75293AR1200014,Silver Classic Suitcase,Fulton,Silver,391.25,6500,No Charge,80,600 Copay after deductible,99.86
+Arkansas Blue Cross and Blue Shield,75293AR1200023,Silver Value,Fulton,Silver,426.68,0,70,95,50,99.86
+Arkansas Blue Cross and Blue Shield,75293AR1200024,Bronze Value,Fulton,Expanded Bronze,335.84,5900,65,130,50 Coinsurance after deductible,99.86
+Arkansas Blue Cross and Blue Shield,75293AR1200025,Gold Standardized,Fulton,Gold,468.85,1500,30,60,25 Coinsurance after deductible,99.85
+Arkansas Blue Cross and Blue Shield,75293AR1200026,Silver Standardized,Fulton,Silver,363.13,5900,40,80,40 Coinsurance after deductible,99.86
+Arkansas Blue Cross and Blue Shield,75293AR1200029,Bronze Exp Standardized,Fulton,Expanded Bronze,302.09,7500,50,100,50 Coinsurance after deductible,99.86

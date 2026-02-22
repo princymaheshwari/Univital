@@ -9,7 +9,7 @@ const SHORT: Record<string, string> = {
 };
 function sn(p?: string) { return SHORT[p || ""] || p || "—"; }
 
-type Page = "dashboard" | "shock" | "compare" | "architecture";
+type Page = "dashboard" | "shock" | "compare" | "architecture" | "chat";
 
 const Icon = ({ name, className = "", fill = 0, size = "24px" }: { name: string; className?: string; fill?: number; size?: string }) => (
   <span className={`material-symbols-rounded select-none ${className}`} style={{ fontVariationSettings: `'FILL' ${fill}, 'wght' 400, 'GRAD' 0, 'opsz' 24`, fontSize: size, display: "inline-block" }}>{name}</span>
@@ -42,6 +42,7 @@ export default function MainLayout({
     { id: "shock", label: "Shock Tests", icon: "bolt" },
     { id: "compare", label: "Compare", icon: "compare_arrows" },
     { id: "architecture", label: "Architecture", icon: "account_tree" },
+    { id: "chat", label: "Plan AI", icon: "smart_toy" },
   ];
 
   const borderB = dark ? "border-white/[0.06]" : "border-black/[0.06]";

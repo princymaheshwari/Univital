@@ -1,4 +1,4 @@
-import type { RiskResponse, ShockResponse } from "../types/risk";
+import type { RiskResponse, ShockResponse, ChatResponse } from "../types/risk";
 
 const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
@@ -79,6 +79,19 @@ export const api = {
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
       throw new Error(err.detail || "Shock scenario unavailable");
+    }
+    return res.json();
+  },
+
+  async chat(message: string, tierFilter?: string[]): Promise<ChatResponse> {
+    const res = await fetch(`${API_BASE}/chat`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message, tier_filter: tierFilter || null }),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.detail || "Chat unavailable");
     }
     return res.json();
   },

@@ -19,6 +19,7 @@ from schemas import (
     UserCreate, UserResponse, UserUpdate, PlanResponse,
     RiskResponse, RiskPlanProfile,
     ShockRequest, ShockResponse, ShockPlanDelta,
+    ChatRequest, ChatResponse,
 )
 from risk_store import match_demo_profile, load_profile
 
@@ -227,6 +228,21 @@ async def run_shock(email: str, body: ShockRequest):
         scenario_type=body.scenario_type,
         results=results,
     )
+
+
+# ── Chatbot (Gemini + Actian VectorAI DB) ────────────────────────────────────
+
+@app.post("/chat", response_model=ChatResponse)
+async def chat(body: ChatRequest):
+    try:
+        import chatbot_service
+        chatbot_service.ensure_index()
+        reply = chatbot_service.query(body.message, body.tier_filter)
+        return ChatResponse(reply=reply)
+    except ImportError:
+        raise HTTPException(status_code=501, detail="Chatbot dependencies not installed (google-genai, cortex)")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Chat error: {e}")
 
 
 # ── Policy clause query (placeholder) ────────────────────────────────────────

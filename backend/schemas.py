@@ -117,3 +117,12 @@ class ShockResponse(BaseModel):
     profile_key: str
     scenario_type: str
     results: List[ShockPlanDelta]
+
+
+class ChatRequest(BaseModel):
+    message: str
+    tier_filter: Optional[List[str]] = None
+
+
+class ChatResponse(BaseModel):
+    reply: str

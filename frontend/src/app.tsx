@@ -9,8 +9,9 @@ import Dashboard from "./pages/Dashboard";
 import Shock from "./pages/Shock";
 import Compare from "./pages/Compare";
 import Architecture from "./pages/Architecture";
+import Chat from "./pages/Chat";
 
-type Page = "dashboard" | "shock" | "compare" | "architecture";
+type Page = "dashboard" | "shock" | "compare" | "architecture" | "chat";
 
 export default function App() {
   const [theme, setTheme] = useState("dark");
@@ -143,6 +144,9 @@ export default function App() {
       )}
       {activePage === "architecture" && (
         <Architecture dark={dark} glass={glass} />
+      )}
+      {activePage === "chat" && (
+        <Chat dark={dark} glass={glass} />
       )}
     </MainLayout>
   );

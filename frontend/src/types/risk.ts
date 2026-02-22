@@ -68,3 +68,7 @@ export interface ShockResponse {
   scenario_type: string;
   results: ShockPlanDelta[];
 }
+
+export interface ChatResponse {
+  reply: string;
+}
